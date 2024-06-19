@@ -4,6 +4,10 @@ import ssd1306
 
 # TOADD: start the on boot code
 
+# init code to start loading the I2C for the screen, buttons
+# buzzer pin, and extra native device programable pins
+ 
+# def init(): for the initialization of oled, buttons, buzzer, gpio as dependand
 def init():
     # button init as input
     button1 = Pin(4, Pin.INPUT)
@@ -23,14 +27,13 @@ def init():
     buzz.duty(0)
 
 
-# init code to start loading the I2C for the screen, buttons
-# buzzer pin, and extra native device programable pins
- 
-# def init(): for the initialization of oled, buttons, buzzer, gpio as dependand
 
+# def wifi_con(ssid, pass):
+#     sta = WLAN
 # load the screen/welcoming, or logo for the oled display
 
 # some simple audio melody to be played
+
 # maybe some audio decoding
 
 # options to chose the mode (desktop/hax gadget)
